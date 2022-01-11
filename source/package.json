@@ -1,0 +1,14 @@
+{
+  "name": "assignteamsbot",
+  "version": "1.0.0",
+  "description": "A bot that will connect to a twitch chat and track what teams users join",
+  "main": "AssignTeams.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mike4ruls",
+  "license": "ISC",
+  "dependencies": {
+    "tmi": "^2.0.0"
+  }
+}
