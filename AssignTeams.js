@@ -1,6 +1,7 @@
 const tmi = require('tmi.js'); 
 const json = require('./credentials.json'); 
 
+
 class Team{
 	constructor(name){
 		this.name = name;
@@ -448,9 +449,17 @@ function onMessageHandler (target, context, msg, self) {
 
 }
 
+function ping(){
+console.log("Being pinged externally");
+client.say(target, `Chat is being pinged`);
+}
+
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
+	
+
+
   for(let i = 0; i < teamInfo.length; i++){
 	  teams.push(Array());
 	}

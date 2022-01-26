@@ -9,6 +9,7 @@
   "author": "mike4ruls",
   "license": "ISC",
   "dependencies": {
+    "node": "^17.3.1",
     "tmi.js": "^1.8.5"
   }
 }
